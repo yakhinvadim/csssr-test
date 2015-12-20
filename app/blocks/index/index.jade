@@ -1,5 +1,7 @@
 include ../content/content
+include ../heading/heading
 
 mixin index()
-	+b.index
-		+content()
+	+b('main').index
+		+heading
+	
