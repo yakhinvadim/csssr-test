@@ -1,5 +1,9 @@
-include form-row/form-row
+include ../form-row/form-row
 
 mixin form()
 	+b('form').form(action='' method='post')
-	
+		+form-row('Полное ФИО', 'Яхин Вадим Дамирович', 'text')
+		+form-row('Год рождения', '1991', 'text')
+		+form-row('Место жительства', 'г. Москва, Россия', 'text')
+		+form-row('Скайп', 'yakhinv', 'text')
+		+form-row('Почта', 'yakhin.v@gmail.com', 'email')

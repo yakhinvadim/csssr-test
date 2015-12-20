@@ -1,4 +1,4 @@
-mixin form-row()
+mixin form-row(label, value, type)
 	+b('label').form-row
-		+e.label
-		+e.input
+		+e.label #{label}
+		+e.input(type='#{type}' value='#{value}')
