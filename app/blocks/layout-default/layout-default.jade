@@ -1,5 +1,6 @@
 include ../../../node_modules/bemto.jade/bemto.jade
 include ../page/page
+include ../header/header
 include ../box/box
 include ../scripts/scripts
 
@@ -9,6 +10,7 @@ html(lang='ru')
 	include ../head/head
 	+page
 		+box
+			+header
 			block content
 
 		+scripts(['app.min.js'])

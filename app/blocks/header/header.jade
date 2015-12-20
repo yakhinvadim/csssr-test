@@ -1,0 +1,7 @@
+include ../logo/logo
+
+mixin header()
+	+b.header&attributes(attributes)
+		+logo
+		
+		+e('img').stamp(src='assets/images/stamp.png' alt='Секретно. Заполнено собственноручно')
