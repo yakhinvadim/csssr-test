@@ -1,4 +1,4 @@
-mixin radio(label, checked)
+mixin radio(name, label)
 	+b('label').radio
-		+e('input').input(type='radio')&attributes(attributes)
-		+e('label').label #{label}
+		+e('input').input(type='radio' name='#{name}')&attributes(attributes)
+		+e('span').label #{label}

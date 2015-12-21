@@ -1,0 +1,7 @@
+include ../radio/radio
+
+mixin radio-group
+	+b.radio-group Выпускник 
+		a(href="https://htmlacademy.ru/profile/id34688") htmlacademy.ru
+		+radio('htmlacademy', 'Да')
+		+radio('htmlacademy', 'Нет')(checked)
