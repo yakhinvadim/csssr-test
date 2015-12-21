@@ -1,12 +1,9 @@
-include ../form-row/form-row
-include ../radio/radio
+include ../form-group/form-group
 
 mixin form()
 	+b('form').form(action='' method='post')
-		+form-row('Полное ФИО', 'Яхин Вадим Дамирович', 'text')
-		+form-row('Год рождения', '1991', 'text')
-		+form-row('Место жительства', 'г. Москва, Россия', 'text')
-		+form-row('Скайп', 'yakhinv', 'text')
-		+form-row('Почта', 'yakhin.v@gmail.com', 'email')
-		+radio('Да')(checked)
-		+radio('Нет')()
+		+form-group('Полное ФИО', 'Яхин Вадим Дамирович', 'text')
+		+form-group('Год рождения', '1991', 'text')
+		+form-group('Место жительства', 'г. Москва, Россия', 'text')
+		+form-group('Скайп', 'yakhinv', 'text')
+		+form-group('Почта', 'yakhin.v@gmail.com', 'email')
