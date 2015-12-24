@@ -1,0 +1,12 @@
+include ../checkbox/checkbox
+include ../radio/radio
+
+mixin checkbox-list(skills)
+	+b.checkbox-list
+		each skill in skills
+			if skill[1]
+				+checkbox(name='skill' checked)
+					span= skill[0]
+			else 
+				+checkbox(name='skill')
+					span= skill[0]
