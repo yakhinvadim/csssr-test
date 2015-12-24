@@ -1,5 +1,1 @@
-import $ from 'jquery';
-
-$(function () {
-
-});
+import nouislider from '../blocks/nouislider/nouislider';
