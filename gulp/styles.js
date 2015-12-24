@@ -25,7 +25,8 @@ gulp.task('styles', () => (
 			sourcemap: !!gutil.env.debug && {
 				comment: false,
 				inline: true
-			}
+			},
+			'include css': true
 		}))
 		.pipe(gulpif(!gutil.env.debug, gcmq()))
 		.pipe(gulpif(!gutil.env.debug, minifyCss()))
