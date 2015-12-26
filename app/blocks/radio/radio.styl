@@ -1,0 +1,17 @@
+.radio
+	display inline-flex
+	align-items center
+	max-width 250px
+	margin-bottom 4px
+
+	&__input
+		display none
+
+	&__icon
+		sprite $radio
+		flex none
+		margin-right 4px
+
+	&__input:checked + &__icon {
+		sprite $radio_checked
+	}

@@ -1,0 +1,17 @@
+.checkbox
+	display flex
+	align-items baseline
+	max-width 250px
+	margin-bottom 4px
+
+	&__input
+		display none
+
+	&__icon
+		sprite $checkbox
+		flex none
+		margin-right 2px
+
+	&__input:checked + &__icon {
+		sprite $checkbox_checked
+	}
