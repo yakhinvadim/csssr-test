@@ -1,5 +1,8 @@
 include ../form-group/form-group
-include ../radio-group/radio-group
+include ../radio/radio
+include ../checkbox-list/checkbox-list
+include ../nouislider/nouislider
+include ../note/note
 
 mixin form()
 	+b('form').form(action='' method='post')
@@ -9,4 +12,20 @@ mixin form()
 		+form-group('Место жительства', 'г. Москва, Россия', 'text')
 		+form-group('Скайп', 'yakhinv', 'text')
 		+form-group('Почта', 'yakhin.v@gmail.com', 'email')
-		+radio-group()		
+		
+		div 
+			| Выпускник 
+			a(href="https://htmlacademy.ru/profile/id34688") htmlacademy.ru
+			+radio()(name='htmlacademy' checked)
+				span Да
+			+radio()(name='htmlacademy')
+				span Нет
+		
+		div Практические навыки
+		+note()
+		
+		+checkbox-list(getData('skills'))
+		
+		+nouislider()
+		
+		+form-group('Дата заполнения', '21.12.2015', 'text')
