@@ -1,1 +1,1 @@
-import nouislider from '../blocks/nouislider/nouislider';
+import '../blocks/javascript-skill/javascript-skill';

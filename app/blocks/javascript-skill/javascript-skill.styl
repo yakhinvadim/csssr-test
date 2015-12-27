@@ -1,0 +1,74 @@
+@import '../../../node_modules/nouislider/distribute/nouislider.min.css'
+
+.noUi-background
+	background-image url('../images/line.png')
+	background-color transparent
+	background-repeat no-repeat
+	background-size 100% 4px
+	border none
+	box-shadow none
+	border-radius 0
+
+.noUi-horizontal
+	height: 4px;
+
+:root .noUi-handle
+	sprite $dragger
+	background-color transparent
+	background-repeat no-repeat
+	border none
+	box-shadow none
+	left -7px
+	top -16px
+
+	&:before,
+	&:after
+		display none
+
+.javascript-skill
+
+	&__slider
+		margin-top 43px
+
+	&__pips
+		position relative
+
+	&__pip
+		font-size 13px
+		line-height 19px
+		max-width 180px
+		position absolute
+		top 25px
+
+		&::before
+			content ''
+			background-color #422720
+			width 2px
+			display block
+			position absolute
+			top -28px
+
+		&_lvl_beginner
+			left 0
+
+			&::before
+				height 25px
+
+		&_lvl_elementary
+			left 20%
+
+			&::before
+				height 13px
+
+		&_lvl_intermediate
+			left 50%
+
+			&::before
+				height 13px
+
+		&_lvl_advanced
+			right 0
+
+			&::before
+				height 25px
+				right -1px

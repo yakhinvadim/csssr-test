@@ -1,12 +1,12 @@
 include ../form-group/form-group
 include ../radio/radio
 include ../checkbox-list/checkbox-list
-include ../nouislider/nouislider
+include ../javascript-skill/javascript-skill
 include ../note/note
 include ../htmlacademy/htmlacademy
 
 mixin form()
-	+b('form').form(action='' method='post')
+	+b('form').form(action='#' method='post')
 	
 		+e.section
 			+form-group('Полное ФИО', 'Яхин Вадим Дамирович', 'text')
@@ -24,8 +24,9 @@ mixin form()
 		
 			+checkbox-list(getData('skills'))
 			
-		+e.section
-			+nouislider()
+		+e.section_content_js
+			div Уровень владения JavaScript
+			+javascript-skill()
 		
 		+e.section
-			+form-group('Дата заполнения', '21.12.2015', 'text')
+			+form-group('Дата заполнения', '27.12.2015', 'text')._content_date
