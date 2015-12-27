@@ -1,8 +1,11 @@
 .checkbox
 	display flex
 	align-items baseline
-	max-width 250px
-	margin-bottom 4px
+	max-width 240px
+	margin-bottom 2px
+	font-size 21px
+	line-height 25px
+	color #000
 
 	&__input
 		display none
@@ -11,7 +14,13 @@
 		sprite $checkbox
 		flex none
 		margin-right 2px
+		position relative
+		top 2px
 
 	&__input:checked + &__icon {
 		sprite $checkbox_checked
 	}
+
+	&__label
+		display inline-block
+		margin-top -2px
