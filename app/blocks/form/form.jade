@@ -3,29 +3,29 @@ include ../radio/radio
 include ../checkbox-list/checkbox-list
 include ../nouislider/nouislider
 include ../note/note
+include ../htmlacademy/htmlacademy
 
 mixin form()
 	+b('form').form(action='' method='post')
 	
-		+form-group('Полное ФИО', 'Яхин Вадим Дамирович', 'text')
-		+form-group('Год рождения', '1991', 'text')
-		+form-group('Место жительства', 'г. Москва, Россия', 'text')
-		+form-group('Скайп', 'yakhinv', 'text')
-		+form-group('Почта', 'yakhin.v@gmail.com', 'email')
+		+e.section
+			+form-group('Полное ФИО', 'Яхин Вадим Дамирович', 'text')
+			+form-group('Год рождения', '1991', 'text')
+			+form-group('Место жительства', 'г. Москва, Россия', 'text')
+			+form-group('Скайп', 'yakhinv', 'text')
+			+form-group('Почта', 'yakhin.v@gmail.com', 'email')
 		
-		div 
-			| Выпускник 
-			a(href="https://htmlacademy.ru/profile/id34688") htmlacademy.ru
-			+radio()(name='htmlacademy' checked)
-				span Да
-			+radio()(name='htmlacademy')
-				span Нет
+		+e.section
+			+htmlacademy()
 		
-		div Практические навыки
-		+note()
+		+e.section
+			div Практические навыки
+			+note()
 		
-		+checkbox-list(getData('skills'))
+			+checkbox-list(getData('skills'))
+			
+		+e.section
+			+nouislider()
 		
-		+nouislider()
-		
-		+form-group('Дата заполнения', '21.12.2015', 'text')
+		+e.section
+			+form-group('Дата заполнения', '21.12.2015', 'text')
