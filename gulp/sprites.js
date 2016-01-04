@@ -8,7 +8,7 @@ import errorHandler from 'gulp-plumber-error-handler';
 
 const spritesDirPath = path.join(__dirname, '../app/sprites');
 const imgPath = '../images/sprites/';
-const tmplName = 'stylus_retina.template.handlebars';
+const tmplName = 'stylus.template.handlebars';
 const tmplPath = '../node_modules/spritesheet-templates/lib/templates';
 const cssTemplate = path.join(__dirname, tmplPath, tmplName);
 
