@@ -1,7 +1,9 @@
+include ../link/link
+
 mixin htmlacademy()
 	+b.htmlacademy 
 		+e.label Выпускник 
-			a(href="https://htmlacademy.ru/profile/id34688") htmlacademy.ru
+			+link(href="https://htmlacademy.ru/profile/id34688") htmlacademy.ru
 		+radio()(name='htmlacademy' checked)
 			span Да
 		+radio()(name='htmlacademy')
