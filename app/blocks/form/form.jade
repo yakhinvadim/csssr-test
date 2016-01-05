@@ -12,20 +12,20 @@ mixin form()
 			+form-group('Полное ФИО', 'Яхин Вадим Дамирович', 'text')
 			+form-group('Год рождения', '1991', 'text')
 			+form-group('Место жительства', 'г. Москва, Россия', 'text')
-			+form-group('Скайп', 'yakhinv', 'text')
-			+form-group('Почта', 'yakhin.v@gmail.com', 'email')
-		
+			+form-group('Скайп', 'yakhinvadim', 'text')
+			+form-group('Почта', 'yakhinvadim@gmail.com', 'email')
+	
 		+e.section
 			+htmlacademy()
-		
+	
 		+e.section
 			div Практические навыки
 			+note()
 			+checkbox-list(getData('skills'))
-			
+
 		+e.section_content_js
 			div Уровень владения JavaScript
 			+javascript-skill()
-		
+	
 		+e.section
-			+form-group('Дата заполнения', '27.12.2015', 'text')._content_date
+			+form-group('Дата заполнения', '05.01.2015', 'text')._content_date

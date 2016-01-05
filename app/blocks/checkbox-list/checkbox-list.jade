@@ -3,12 +3,14 @@ include ../radio/radio
 
 mixin checkbox-list(skills)
 	+b.checkbox-list
+	
 		each column in skills
 			+e.column
+			
 				each skill in column
 					if skill[1]
 						+checkbox(name='skill' checked)
-							+e.label= skill[0]
+							+e.label= skill[0]		
 					else 
 						+checkbox(name='skill')
 							+e.label= skill[0]
